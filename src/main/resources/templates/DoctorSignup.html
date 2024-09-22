@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Signup</title>
+   
+</head>
+<body>
+    <h2>Doctor Signup</h2>
+    <form action="/submitDoctorSignup" method="post" >
+    
+   <!--   enctype="multipart/form-data" -->
+   
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+         <br> <br>
+         
+         
+         <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <br> <br>
+
+        <label for="specialization">Specialization</label>
+        <select id="specialization" name="specialization" required>
+            <option value="General">General</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Neurologist">Neurologist</option>
+            <!-- Add more specializations as needed -->
+        </select>
+        
+        <br> <br>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+        
+        <br> <br>
+
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        
+        <br> <br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="M" required> M
+        <input type="radio" id="female" name="gender" value="F" required> F
+        
+        <br> <br>
+
+        <label for="note">Note</label>
+        <textarea id="note" name="note" rows="3"></textarea>
+        
+        <br> <br>
+
+       <!--  <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+        <br> <br>  --> 
+
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
