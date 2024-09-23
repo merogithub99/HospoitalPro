@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
 </head>
 <body>
+    <h2>Appointment</h2>
+    <form action="/PostAddAppointment" method="POST">
+        <label for="doctor">Doctor:</label>
+        <select id="doctor" name="doctor">
+            <option value="Dr. Hari">Dr. Hari</option>
+            <option value="Dr. Ram">Dr. Ram</option>
+            <option value="Dr. Sita">Dr. Sita</option>
+        </select>
+        <br><br>
 
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+
+        <label for="slots">No. of Slots:</label>
+        <input type="number" id="slots" name="slots" required>
+        <br><br>
+
+        <label for="details">Details:</label>
+        <textarea id="details" name="details" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="fee">Consultation Fee:</label>
+        <input type="number" id="fee" name="consultationFee" required>
+        <br><br>
+
+        <input type="submit" value="Add">
+    </form>
 </body>
 </html>
