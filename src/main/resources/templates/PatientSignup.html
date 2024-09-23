@@ -5,8 +5,113 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>patient sign up</h1>
-Name <input type="text" >
+	<h1>patient sign up</h1>
+	<form action="/postPatientSignup" method="post">
+	<label for="name">Name</label>
+	<input type="text" id="name" name="name" required>
+	<br>
+	<br>
+
+	<label for="password">Password</label>
+	<input type="password" id="password" name="password" required>
+	<br>
+	<br>
+
+	<label for="gender">Gender</label>
+	<input type="radio" id="male" name="gender" value="M" required>M
+	<input type="radio" id="female" name="gender" value="F" required>F
+	<br>
+	<br>
+
+	<label for="phone">phone</label>
+	<input type="tel" id="phone" name="phone" required>
+	<br>
+	<br>
+	
+	<label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br />
+
+     
+      <label>Marital Status:</label>
+      <input
+        type="radio"
+        id="M"
+        name="maritalStatus"
+        value="M"
+      />M
+      
+       
+      <input
+        type="radio"
+        id="U"
+        name="maritalStatus"
+        value="U"
+      />U
+      <br>
+      
+      <input
+        type="radio"
+        id="D"
+        name="maritalStatus"
+        value="D"
+      />D
+      
+      <input
+        type="radio"
+        id="LS"
+        name="maritalStatus"
+        value="LS"
+      />LS
+      
+      
+      <label for="presentAddress">Present Address:</label><br />
+      <textarea
+        id="presentAddress"
+        name="presentAddress"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br />
+
+      <label for="communicationAddress">Communication Address:</label>
+      <textarea
+        id="communicationAddress"
+        name="communicationAddress"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br />
+
+      <label>Past Medical History:</label><br />
+      <input type="checkbox" id="anemia" name="medicalHistory" value="Anemia" />
+      <label for="anemia">Anemia</label>
+      <input type="checkbox" id="asthma" name="medicalHistory" value="Asthma" />
+      <label for="asthma">Asthma</label>
+      <input
+        type="checkbox"
+        id="diabetes"
+        name="medicalHistory"
+        value="Diabetes"
+      />
+      <label for="diabetes">Diabetes</label>
+      <input type="checkbox" id="cancer" name="medicalHistory" value="Cancer" />
+      <label for="cancer">Cancer</label>
+      <input type="checkbox" id="ulcer" name="medicalHistory" value="Ulcer" />
+      <label for="ulcer">Ulcer</label><br />
+
+      <label for="otherMedicalHistory">Other:</label> <br />
+      <textarea
+        id="otherMedicalHistory"
+        name="otherMedicalHistory"
+        rows="4"
+        cols="50"
+      ></textarea
+      ><br />
+
+      <input type="submit" value="Register" />
+    </form>
 
 </body>
 </html>

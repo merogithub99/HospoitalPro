@@ -39,11 +39,12 @@ public class DoctorController {
         return "DoctorLogin";  
     }
     
-    @GetMapping("/doctorLogin")
+    @GetMapping("/DoctorLogin")
     public String getLogin() {
     	
     	return "DoctorLogin";
     }
+    
     
     @PostMapping("/postDoctorLogin")
     public String postLogin(@ModelAttribute Doctor doctor, Model model) {
